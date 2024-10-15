@@ -4,7 +4,12 @@ import time
 
 
 def run_adb_command(command):
-    """Runs an ADB command and returns the output."""
+    """
+    Runs an ADB command and returns the output.
+
+    :return: command output
+    :rtype: str
+    """
     result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return result.stdout.decode('utf-8'), result.stderr.decode('utf-8')
 
@@ -38,6 +43,7 @@ def tap(action):
 
 
 def wait_for_response():
+    """giving the bot some time to respond"""
     time.sleep(3)
 
 

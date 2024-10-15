@@ -1,3 +1,7 @@
+"""
+Dict that contains tapping coordinates, and their action name.
+"""
+
 taps = {
     'enter_bot_chat': (200, 400),
     'send_txt': (1000, 2100),
